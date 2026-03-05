@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://continuouscoordination.org/schema/coordination-event.schema.json",
+  "title": "Coordination event",
+  "description": "A record of a person providing input to a coordination loop - submitting a team check-in or a goal story update.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for this coordination event."
+    },
+    "person_id": {
+      "type": "string",
+      "description": "ID of the person who provided input."
+    },
+    "event_type": {
+      "type": "string",
+      "enum": ["team_checkin", "goal_story_update"],
+      "description": "The type of input provided."
+    },
+    "reference_id": {
+      "type": "string",
+      "description": "ID of the team check-in or goal story update that was submitted."
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when this event occurred (ISO 8601)."
+    }
+  },
+  "required": ["id", "person_id", "event_type", "reference_id", "occurred_at"]
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://continuouscoordination.org/schema/goal-story.schema.json",
+  "title": "Goal story",
+  "description": "A goal story - a project, objective, or initiative tracked in the big-picture coordination loop. Goal stories connect plans to progress across teams, keeping entire organizations aligned on what matters.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for this goal story."
+    },
+    "title": {
+      "type": "string",
+      "description": "Short, descriptive title."
+    },
+    "description": {
+      "type": "string",
+      "description": "Context about what this goal story is and why it matters. Leading with context enables autonomous teams."
+    },
+    "owner_id": {
+      "type": "string",
+      "description": "ID of the person responsible for this goal story."
+    },
+    "team_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs of teams involved with this goal story."
+    },
+    "contributor_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs of people involved with this goal story."
+    },
+    "parent_id": {
+      "type": ["string", "null"],
+      "description": "ID of the parent goal story, enabling nested goal story hierarchies (e.g. company objective > team goal story > key result)."
+    },
+    "timeframe": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date",
+          "description": "Start date (ISO 8601)."
+        },
+        "end": {
+          "type": "string",
+          "format": "date",
+          "description": "Target end date (ISO 8601)."
+        }
+      },
+      "description": "Time period this goal story covers."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when this goal story was created (ISO 8601)."
+    }
+  },
+  "required": ["id", "title", "owner_id"]
+}

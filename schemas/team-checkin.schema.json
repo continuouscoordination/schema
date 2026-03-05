@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://continuouscoordination.org/schema/team-checkin.schema.json",
+  "title": "Team check-in",
+  "description": "An individual's update to their team within the ground-level coordination loop. Captures intentions, progress, and blockers to keep teammates in sync day-to-day or week-to-week.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for this team check-in."
+    },
+    "membership_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs of the memberships this team check-in is for. Each membership encodes both the person and the team, ensuring the person belongs to every referenced team."
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "The date this team check-in covers (ISO 8601)."
+    },
+    "next": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Intentions - what this person plans to work on. Communicating intent is a core practice: it lets leaders course-correct early and lets contributors drive progress autonomously."
+    },
+    "previously": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Progress - what this person accomplished since their last team check-in."
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Anything preventing forward progress that needs attention from the team or leadership."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when this team check-in was submitted (ISO 8601)."
+    }
+  },
+  "required": ["id", "membership_ids", "date"]
+}

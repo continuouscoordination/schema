@@ -1,0 +1,17 @@
+{
+  "id": "ci-2026-03-05-m1",
+  "membership_ids": ["m-1"],
+  "date": "2026-03-05",
+  "next": [
+    "Finalize Q2 campaign brief with creative team",
+    "Review onboarding survey results and draft recommendations"
+  ],
+  "previously": [
+    "Published updated pricing page - first traffic looks promising",
+    "Ran onboarding walkthrough with two new enterprise accounts"
+  ],
+  "blockers": [
+    "Need budget approval from finance before we can commit to the conference sponsorship"
+  ],
+  "created_at": "2026-03-05T09:15:00-06:00"
+}

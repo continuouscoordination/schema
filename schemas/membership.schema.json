@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://continuouscoordination.org/schema/membership.schema.json",
+  "title": "Membership",
+  "description": "A person's membership in a team. This is the source of truth for who belongs to which team, and can carry per-team attributes like role.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for this membership."
+    },
+    "person_id": {
+      "type": "string",
+      "description": "ID of the person."
+    },
+    "team_id": {
+      "type": "string",
+      "description": "ID of the team."
+    },
+    "role": {
+      "type": "string",
+      "description": "This person's role within this team (e.g. lead, contributor, observer)."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when this membership was created (ISO 8601)."
+    }
+  },
+  "required": ["id", "person_id", "team_id"]
+}

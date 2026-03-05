@@ -1,0 +1,13 @@
+{
+  "name": "continuous-coordination-schema",
+  "version": "0.1.0",
+  "description": "Open JSON Schema definitions for Continuous Coordination",
+  "license": "CC-BY-SA-4.0",
+  "scripts": {
+    "test": "node tests/validate.js"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.0",
+    "ajv-formats": "^3.0.0"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://continuouscoordination.org/schema/goal-story-update.schema.json",
+  "title": "Goal story update",
+  "description": "A progress update on a goal story within the big-picture coordination loop. Goal story updates are the recurring signal that keeps plans connected to progress - written narratives that give everyone the context they need.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for this update."
+    },
+    "goal_story_id": {
+      "type": "string",
+      "description": "ID of the goal story this update is for."
+    },
+    "author_id": {
+      "type": "string",
+      "description": "ID of the person who wrote this update."
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "The date of this update (ISO 8601)."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["on_track", "at_risk", "off_track", "completed", "paused"],
+      "description": "Goal story status as of this update."
+    },
+    "title": {
+      "type": "string",
+      "description": "A short headline for this update - the essential takeaway in one line."
+    },
+    "content": {
+      "type": "string",
+      "description": "Narrative update - the written context about where things stand and why. Writing it down clarifies thinking, makes updates digestible, and creates a searchable record."
+    },
+    "next_steps": {
+      "type": "string",
+      "description": "What's coming next - planned actions, open questions, or decisions needed before the next update."
+    },
+    "progress_percent": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Optional numeric progress indicator."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when this update was published (ISO 8601)."
+    }
+  },
+  "required": ["id", "goal_story_id", "author_id", "date", "title", "content"]
+}
