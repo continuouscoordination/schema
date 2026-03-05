@@ -1,0 +1,6 @@
+{
+  "id": "t-1",
+  "name": "Growth",
+  "description": "New customer acquisition and onboarding",
+  "member_ids": ["p-1", "p-2", "p-3"]
+}
