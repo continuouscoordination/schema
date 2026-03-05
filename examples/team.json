@@ -2,6 +2,5 @@
   "id": "t-1",
   "name": "Growth",
   "description": "New customer acquisition and onboarding",
-  "members": ["p-1", "p-2", "p-3", "p-4"],
-  "visibility": "open"
+  "members": ["p-1", "p-2", "p-3", "p-4"]
 }
