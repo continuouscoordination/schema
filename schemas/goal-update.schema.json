@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://continuouscoordination.org/schema/goal-update.schema.json",
+  "title": "Goal Update",
+  "description": "A progress update on a goal within the big-picture coordination loop. Goal updates are the recurring signal that keeps plans connected to progress -- written narratives that give everyone the context they need.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for this update."
+    },
+    "goal_id": {
+      "type": "string",
+      "description": "ID of the goal this update is for."
+    },
+    "author_id": {
+      "type": "string",
+      "description": "ID of the person who wrote this update."
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "The date of this update (ISO 8601)."
+    },
+    "status": {
+      "type": "string",
+      "enum": ["on_track", "at_risk", "off_track", "completed", "paused"],
+      "description": "Goal status as of this update."
+    },
+    "content": {
+      "type": "string",
+      "description": "Narrative update -- the written context about where things stand and why. Writing it down clarifies thinking, makes updates digestible, and creates a searchable record."
+    },
+    "progress_percent": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Optional numeric progress indicator."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when this update was published (ISO 8601)."
+    }
+  },
+  "required": ["id", "goal_id", "author_id", "date", "content"]
+}

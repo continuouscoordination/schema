@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://continuouscoordination.org/schema/person.schema.json",
+  "title": "Person",
+  "description": "A team member participating in one or more coordination loops.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for this person."
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name."
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Email address."
+    },
+    "role": {
+      "type": "string",
+      "description": "Job title or role within the organization."
+    },
+    "timezone": {
+      "type": "string",
+      "description": "IANA timezone identifier (e.g. America/New_York)."
+    },
+    "teams": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs of teams this person belongs to."
+    }
+  },
+  "required": ["id", "name"]
+}
