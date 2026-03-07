@@ -62,7 +62,9 @@ Goal updates are intentionally narrative, not just status fields. Writing forces
 
 Key properties:
 
-- **content** -- The written update. Rich, contextual narrative.
+- **title** -- A short headline for the update. The essential takeaway in one line.
+- **content** -- The written update. Rich, contextual, human-authored narrative.
+- **next_steps** (optional) -- What's coming next: planned actions, open questions, or decisions needed.
 - **status** -- Goal status as of this update. Status on the update (not just the goal) creates a history of how status changed over time.
 - **progress_percent** (optional) -- A numeric indicator. Useful for dashboards and rollups, but the narrative content is the primary signal.
 
