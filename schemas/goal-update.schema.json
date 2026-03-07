@@ -27,9 +27,17 @@
       "enum": ["on_track", "at_risk", "off_track", "completed", "paused"],
       "description": "Goal status as of this update."
     },
+    "title": {
+      "type": "string",
+      "description": "A short headline for this update -- the essential takeaway in one line."
+    },
     "content": {
       "type": "string",
       "description": "Narrative update -- the written context about where things stand and why. Writing it down clarifies thinking, makes updates digestible, and creates a searchable record."
+    },
+    "next_steps": {
+      "type": "string",
+      "description": "What's coming next -- planned actions, open questions, or decisions needed before the next update."
     },
     "progress_percent": {
       "type": "integer",
@@ -43,5 +51,5 @@
       "description": "Timestamp when this update was published (ISO 8601)."
     }
   },
-  "required": ["id", "goal_id", "author_id", "date", "content"]
+  "required": ["id", "goal_id", "author_id", "date", "title", "content"]
 }
