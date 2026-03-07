@@ -13,9 +13,14 @@
       "type": "string",
       "description": "ID of the goal this update is for."
     },
-    "author_id": {
+    "actor_id": {
       "type": "string",
-      "description": "ID of the person who wrote this update."
+      "description": "ID of the person or agent providing this update."
+    },
+    "actor_type": {
+      "type": "string",
+      "enum": ["person", "agent"],
+      "description": "Whether the actor is a person or an agent."
     },
     "date": {
       "type": "string",
@@ -43,5 +48,5 @@
       "description": "Timestamp when this update was published (ISO 8601)."
     }
   },
-  "required": ["id", "goal_id", "author_id", "date", "content"]
+  "required": ["id", "goal_id", "actor_id", "actor_type", "date", "content"]
 }

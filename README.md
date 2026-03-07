@@ -5,7 +5,7 @@ Open JSON Schema definitions for the data in [Continuous Coordination](https://c
 Continuous Coordination is a lightweight methodology for modern teamwork, centered on two structured, overlapping coordination loops:
 
 - **Big-Picture Loop** -- Connects plans to progress across teams through goals and regular written updates (weekly/bi-weekly/monthly)
-- **Ground-Level Loop** -- Keeps teammates in sync day-to-day through async check-ins (daily/weekly)
+- **Ground-Level Loop** -- Keeps teammates and agents in sync day-to-day through async check-ins (daily/weekly)
 
 These schemas define the shape of the data that flows through those loops, so any tool can produce, consume, and exchange it using a shared format.
 
@@ -14,8 +14,9 @@ These schemas define the shape of the data that flows through those loops, so an
 | Schema | Description |
 |--------|-------------|
 | [person](schemas/person.schema.json) | A team member participating in coordination loops |
-| [team](schemas/team.schema.json) | A group of people who coordinate together |
-| [checkin](schemas/checkin.schema.json) | An individual's update to the ground-level loop (intentions, progress, blockers) |
+| [agent](schemas/agent.schema.json) | An AI agent participating in coordination loops |
+| [team](schemas/team.schema.json) | A group of people and agents who coordinate together |
+| [checkin](schemas/checkin.schema.json) | An individual's (person or agent) update to the ground-level loop (intentions, progress, blockers) |
 | [goal](schemas/goal.schema.json) | A big-picture goal, objective, or initiative with ownership and timeframe |
 | [goal-update](schemas/goal-update.schema.json) | A progress update on a goal |
 

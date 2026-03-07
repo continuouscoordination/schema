@@ -9,9 +9,14 @@
       "type": "string",
       "description": "Unique identifier for this check-in."
     },
-    "person_id": {
+    "actor_id": {
       "type": "string",
-      "description": "ID of the person submitting this check-in."
+      "description": "ID of the person or agent this check-in is for."
+    },
+    "actor_type": {
+      "type": "string",
+      "enum": ["person", "agent"],
+      "description": "Whether the actor is a person or an agent."
     },
     "team_id": {
       "type": "string",
@@ -49,5 +54,5 @@
       "description": "Timestamp when this check-in was submitted (ISO 8601)."
     }
   },
-  "required": ["id", "person_id", "team_id", "date"]
+  "required": ["id", "actor_id", "actor_type", "team_id", "date"]
 }

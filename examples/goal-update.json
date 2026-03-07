@@ -1,7 +1,8 @@
 {
   "id": "gu-2026-03-03-g1",
   "goal_id": "g-1",
-  "author_id": "p-1",
+  "actor_id": "p-1",
+  "actor_type": "person",
   "date": "2026-03-03",
   "status": "on_track",
   "content": "Good progress this week. The simplified onboarding flow went live on Monday and early numbers are encouraging -- new accounts are reaching their first milestone in about 5 days, down from 10. Not quite at our 3-day target yet, but trending the right way.\n\nThe two enterprise walkthroughs this week surfaced a pattern: customers want to invite their team earlier in the process but the current flow buries that step. We're going to move team invites up to day one next week.\n\nOne thing to watch: the onboarding survey response rate is low. We may need to rethink how we ask for feedback.",

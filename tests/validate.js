@@ -11,6 +11,7 @@ const examplesDir = path.join(__dirname, "..", "examples");
 
 const pairs = [
   ["person.schema.json", "person.json"],
+  ["agent.schema.json", "agent.json"],
   ["team.schema.json", "team.json"],
   ["checkin.schema.json", "checkin.json"],
   ["goal.schema.json", "goal.json"],

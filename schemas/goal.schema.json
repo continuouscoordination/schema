@@ -35,6 +35,13 @@
       },
       "description": "IDs of people working toward this goal."
     },
+    "agent_contributor_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs of agents working toward this goal."
+    },
     "parent_id": {
       "type": ["string", "null"],
       "description": "ID of the parent goal, enabling nested goal hierarchies (e.g. company objective > team goal > key result)."

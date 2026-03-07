@@ -1,6 +1,7 @@
 {
   "id": "ci-2026-03-05-p1-t1",
-  "person_id": "p-1",
+  "actor_id": "p-1",
+  "actor_type": "person",
   "team_id": "t-1",
   "date": "2026-03-05",
   "next": [

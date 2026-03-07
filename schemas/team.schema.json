@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://continuouscoordination.org/schema/team.schema.json",
   "title": "Team",
-  "description": "A group of people who coordinate together. Teams are the primary unit of both coordination loops.",
+  "description": "A group of people and agents who coordinate together. Teams are the primary unit of both coordination loops.",
   "type": "object",
   "properties": {
     "id": {
@@ -23,6 +23,13 @@
         "type": "string"
       },
       "description": "IDs of people on this team."
+    },
+    "agents": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs of agents on this team."
     }
   },
   "required": ["id", "name"]

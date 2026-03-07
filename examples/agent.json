@@ -1,0 +1,7 @@
+{
+  "id": "a-1",
+  "name": "Onboarding Assistant",
+  "description": "Monitors onboarding metrics and reports on new customer progress",
+  "type": "assistant",
+  "teams": ["t-1"]
+}

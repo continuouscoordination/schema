@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://continuouscoordination.org/schema/agent.schema.json",
+  "title": "Agent",
+  "description": "An AI agent participating in one or more coordination loops. Agents can be members of teams, perform check-ins, and contribute to goals alongside people.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for this agent."
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name."
+    },
+    "description": {
+      "type": "string",
+      "description": "What this agent does."
+    },
+    "type": {
+      "type": "string",
+      "description": "The kind of agent (e.g. assistant, bot, automation)."
+    },
+    "teams": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs of teams this agent belongs to."
+    }
+  },
+  "required": ["id", "name"]
+}
