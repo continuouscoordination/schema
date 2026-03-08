@@ -4,7 +4,7 @@ Open JSON Schema definitions for the data in [Continuous Coordination](https://c
 
 Continuous Coordination is a lightweight methodology for modern teamwork, centered on two structured, overlapping coordination loops:
 
-- **Big-Picture Loop** - Connects plans to progress across teams through goal stories and regular written updates (weekly/bi-weekly/monthly)
+- **Big-Picture Loop** - Connects plans to progress across teams through regular written updates and next steps to "goal stories" (weekly/bi-weekly/monthly)
 - **Ground-Level Loop** - Keeps teammates in sync day-to-day through async team check-ins (daily/weekly)
 
 These schemas define the shape of the data that flows through those loops, so any tool can produce, consume, and exchange it using a shared format.
@@ -13,13 +13,14 @@ These schemas define the shape of the data that flows through those loops, so an
 
 | Schema | Description |
 |--------|-------------|
-| [person](schemas/person.schema.json) | A team member participating in coordination loops |
-| [team](schemas/team.schema.json) | A group of people who coordinate together |
-| [membership](schemas/membership.schema.json) | A person's membership in a team |
-| [team-checkin](schemas/team-checkin.schema.json) | An individual's update to the ground-level loop (intentions, progress, blockers) |
-| [goal-story](schemas/goal-story.schema.json) | A big-picture goal story - a project, objective, or initiative with ownership and timeframe |
-| [goal-story-update](schemas/goal-story-update.schema.json) | A progress update on a goal story |
-| [coordination-event](schemas/coordination-event.schema.json) | A record of a person providing input to a coordination loop |
+| [person](schemas/person.schema.json) | A human participant in coordination loops |
+| [agent](schemas/agent.schema.json) | An AI autonomous participant in coordination loops |
+| [team](schemas/team.schema.json) | A group of actors who coordinate together |
+| [membership](schemas/membership.schema.json) | An actor's membership in a team |
+| [team-checkin](schemas/team-checkin.schema.json) | An actor's update to the ground-level loop (intentions, progress, blockers) |
+| [goal-story](schemas/goal-story.schema.json) | A big-picture story of a container of work - a project, objective, or initiative with ownership and timeframe |
+| [goal-story-update](schemas/goal-story-update.schema.json) | An update on status, progress, and next steps on a goal story |
+| [coordination-event](schemas/coordination-event.schema.json) | A record of an actor providing input to a coordination loop |
 
 See [examples/](examples/) for valid sample data and [spec.md](spec.md) for the full specification.
 

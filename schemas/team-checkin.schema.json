@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://continuouscoordination.org/schema/team-checkin.schema.json",
   "title": "Team check-in",
-  "description": "An individual's update to their team within the ground-level coordination loop. Captures intentions, progress, and blockers to keep teammates in sync day-to-day or week-to-week.",
+  "description": "An actor's update to their team within the ground-level coordination loop. Captures intentions, progress, and blockers to keep teammates in sync day-to-day or week-to-week.",
   "type": "object",
   "properties": {
     "id": {
@@ -14,7 +14,7 @@
       "items": {
         "type": "string"
       },
-      "description": "IDs of the memberships this team check-in is for. Each membership encodes both the person and the team, ensuring the person belongs to every referenced team."
+      "description": "IDs of the memberships this team check-in is for. Each membership encodes both the actor and the team."
     },
     "date": {
       "type": "string",

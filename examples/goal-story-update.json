@@ -1,7 +1,8 @@
 {
   "id": "gu-2026-03-03-g1",
   "goal_story_id": "g-1",
-  "author_id": "p-1",
+  "actor_id": "p-1",
+  "actor_type": "person",
   "date": "2026-03-03",
   "status": "on_track",
   "title": "Onboarding time trending down, team invites moving up",

@@ -28,12 +28,24 @@
       },
       "description": "IDs of teams involved with this goal story."
     },
-    "contributor_ids": {
+    "contributors": {
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "actor_id": {
+            "type": "string",
+            "description": "ID of the contributing actor."
+          },
+          "actor_type": {
+            "type": "string",
+            "enum": ["person", "agent"],
+            "description": "Whether this actor is a person or an agent."
+          }
+        },
+        "required": ["actor_id", "actor_type"]
       },
-      "description": "IDs of people involved with this goal story."
+      "description": "Actors (people or agents) contributing to this goal story."
     },
     "parent_id": {
       "type": ["string", "null"],

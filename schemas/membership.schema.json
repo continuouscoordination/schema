@@ -2,16 +2,21 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://continuouscoordination.org/schema/membership.schema.json",
   "title": "Membership",
-  "description": "A person's membership in a team. This is the source of truth for who belongs to which team, and can carry per-team attributes like role.",
+  "description": "An actor's membership in a team. This is the source of truth for who belongs to which team, and can carry per-team attributes like role. An actor can be a person or an agent.",
   "type": "object",
   "properties": {
     "id": {
       "type": "string",
       "description": "Unique identifier for this membership."
     },
-    "person_id": {
+    "actor_id": {
       "type": "string",
-      "description": "ID of the person."
+      "description": "ID of the actor (person or agent) who belongs to this team."
+    },
+    "actor_type": {
+      "type": "string",
+      "enum": ["person", "agent"],
+      "description": "Whether this actor is a person or an agent."
     },
     "team_id": {
       "type": "string",
@@ -19,7 +24,7 @@
     },
     "role": {
       "type": "string",
-      "description": "This person's role within this team (e.g. lead, contributor, observer)."
+      "description": "This actor's role within this team (e.g. lead, contributor, observer)."
     },
     "created_at": {
       "type": "string",
@@ -27,5 +32,5 @@
       "description": "Timestamp when this membership was created (ISO 8601)."
     }
   },
-  "required": ["id", "person_id", "team_id"]
+  "required": ["id", "actor_id", "actor_type", "team_id"]
 }

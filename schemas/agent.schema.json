@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://continuouscoordination.org/schema/agent.schema.json",
+  "title": "Agent",
+  "description": "An automated participant in one or more coordination loops. Agents can belong to teams and provide team check-ins and goal story updates, just like people.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for this agent."
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name."
+    },
+    "description": {
+      "type": "string",
+      "description": "What this agent does and why it participates in coordination loops."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when this agent was created (ISO 8601)."
+    }
+  },
+  "required": ["id", "name"]
+}
