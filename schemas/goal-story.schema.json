@@ -17,12 +17,12 @@
       "type": "string",
       "description": "Context about what this goal story is and why it matters. Leading with context enables autonomous teams."
     },
-    "person_ids": {
+    "actor_ids": {
       "type": "array",
       "items": {
         "type": "string"
       },
-      "description": "IDs of people involved with this goal story."
+      "description": "IDs of actors involved with this goal story."
     },
     "team_ids": {
       "type": "array",

@@ -1,5 +1,6 @@
 {
   "id": "p-1",
+  "actor_type": "person",
   "name": "Jamie Chen",
   "email": "jamie@example.com",
   "role": "Product Manager",

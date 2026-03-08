@@ -10,7 +10,7 @@ const schemasDir = path.join(__dirname, "..", "schemas");
 const examplesDir = path.join(__dirname, "..", "examples");
 
 const pairs = [
-  ["person.schema.json", "person.json"],
+  ["actor.schema.json", "actor.json"],
   ["team.schema.json", "team.json"],
   ["team-checkin.schema.json", "team-checkin.json"],
   ["goal-story.schema.json", "goal-story.json"],

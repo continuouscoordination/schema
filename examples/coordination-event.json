@@ -1,6 +1,6 @@
 {
   "id": "ce-2026-03-05-p1",
-  "person_id": "p-1",
+  "actor_id": "p-1",
   "event_type": "team_checkin",
   "reference_id": "ci-2026-03-05-m1",
   "occurred_at": "2026-03-05T09:15:00-06:00"
