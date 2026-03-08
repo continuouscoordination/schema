@@ -1,6 +1,6 @@
 # Continuous Coordination Schema Specification
 
-Version: 0.2.0
+Version: 1.0.0
 
 This document defines the semantics of the Continuous Coordination Schema - what the data means, how the objects relate, and how they map to the two coordination loops described in [Continuous Coordination](https://continuouscoordination.org).
 
