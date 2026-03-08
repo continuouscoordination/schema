@@ -22,6 +22,10 @@ These schemas define the shape of the data that flows through those loops, so an
 
 See [examples/](examples/) for valid sample data and [spec.md](spec.md) for the full specification.
 
+### Visualization
+
+![Continuous Coordination Schema](schema_v0-2-0.svg)
+
 ## Usage
 
 ### Validate data against the schemas
