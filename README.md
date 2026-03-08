@@ -24,7 +24,7 @@ See [examples/](examples/) for valid sample data and [spec.md](spec.md) for the 
 
 ### Visualization
 
-![Continuous Coordination Schema](schema_v0-2-0.svg)
+![Continuous Coordination Schema](schema_v1-0-0.svg)
 
 ## Usage
 
