@@ -4,6 +4,10 @@ All notable changes to the Continuous Coordination Schema will be documented in 
 
 This project follows [Semantic Versioning](https://semver.org/).
 
+## [0.3.0] - 2026-03-09
+
+- Remove `next_steps` from goal story updates. Intent for goal stories is captured in the goal story itself.
+
 ## [0.2.0] - 2026-03-08
 
 - Remove `email` from person schema; contact info is an implementation detail

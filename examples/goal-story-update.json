@@ -6,7 +6,6 @@
   "status": "on_track",
   "title": "Onboarding time trending down, team invites moving up",
   "content": "Good progress this week. The simplified onboarding flow went live on Monday and early numbers are encouraging - new accounts are reaching their first milestone in about 5 days, down from 10. Not quite at our 3-day target yet, but trending the right way.\n\nThe two enterprise walkthroughs this week surfaced a pattern: customers want to invite their team earlier in the process but the current flow buries that step.\n\nOne thing to watch: the onboarding survey response rate is low. We may need to rethink how we ask for feedback.",
-  "next_steps": "Move team invites up to day one in the onboarding flow. Explore alternative approaches for the onboarding survey to improve response rate.",
   "progress_percent": 65,
   "created_at": "2026-03-03T14:30:00-06:00"
 }

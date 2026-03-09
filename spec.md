@@ -1,6 +1,6 @@
 # Continuous Coordination Schema Specification
 
-Version: 0.2.0
+Version: 0.3.0
 
 This document defines the semantics of the Continuous Coordination Schema - what the data means, how the objects relate, and how they map to the two coordination loops described in [Continuous Coordination](https://continuouscoordination.org).
 
@@ -62,7 +62,6 @@ Key properties:
 - **goal_story_id** - The goal story this update is for.
 - **title** - A short headline for the update. The essential takeaway in one line.
 - **content** - The written update. Rich, contextual, human-authored narrative.
-- **next_steps** (optional) - What's coming next: planned actions, open questions, or decisions needed.
 - **status** - Goal story status as of this update. Status on the update (not just the goal story) creates a history of how status changed over time.
 - **progress_percent** (optional) - A numeric indicator. Useful for dashboards and rollups, but the narrative content is the primary signal.
 
