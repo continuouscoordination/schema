@@ -12,9 +12,9 @@ The JSON Schema files define the *shape* of the data. This specification defines
 
 Continuous Coordination is built on two loops that run at different cadences and scopes:
 
-**Big-Picture Loop** connects plans to progress across teams and people through **goal stories** (projects, campaigns, sprints, OKRs - any container of work) and regular written updates. Typically runs on a weekly, bi-weekly, or monthly cadence.
+**Big-Picture Loop** connects plans to progress across teams, people, and agents through **goal stories** (projects, campaigns, sprints, OKRs - any container of work) and regular written updates. Typically runs on a weekly, bi-weekly, or monthly cadence.
 
-**Ground-Level Loop** keeps teammates in sync day-to-day through team member check-ins that capture intentions, progress, and blockers. Typically runs daily to weekly.
+**Ground-Level Loop** keeps teammates and agents in sync day-to-day through team member check-ins that capture intentions, progress, and blockers. Typically runs daily to weekly.
 
 Both loops are async by default - participants contribute and consume on their own schedule.
 

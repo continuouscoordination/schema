@@ -4,8 +4,8 @@ Open JSON Schema definitions for the data in [Continuous Coordination](https://c
 
 Continuous Coordination is a lightweight methodology for modern teamwork, centered on two structured, overlapping coordination loops:
 
-- **Big-Picture Loop** - Connects plans to progress across teams and people through _goal stories_ (projects, campaigns, sprints, OKRs - any container of work) and regular written updates with status, progress, and next steps
-- **Ground-Level Loop** - Keeps teammates in sync day-to-day through _team member check-ins_ (intentions, accomplishments, and blockers)
+- **Big-Picture Loop** - Connects plans to progress across teams, people, and agents through _goal stories_ (projects, campaigns, sprints, OKRs - any container of work) and regular written updates with status, progress, and next steps
+- **Ground-Level Loop** - Keeps teammates and agents in sync day-to-day through _team member check-ins_ (intentions, accomplishments, and blockers)
 
 These schemas define the shape of the data that flows through those loops, so any tool can produce, consume, and exchange it using a shared format.
 
