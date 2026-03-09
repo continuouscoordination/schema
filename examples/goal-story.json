@@ -2,7 +2,7 @@
   "id": "g-1",
   "title": "Improve new customer onboarding experience",
   "description": "New customers are taking too long to see value after signing up. We're losing people in the first two weeks. We need to simplify the onboarding flow and get customers to their first success moment faster, reducing time-to-value from 10 days to under 3.",
-  "person_ids": ["p-1", "p-2", "p-3"],
+  "actor_ids": ["p-1", "p-2", "p-3"],
   "team_ids": ["t-1"],
   "parent_id": "g-0",
   "timeframe": {

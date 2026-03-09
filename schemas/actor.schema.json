@@ -1,13 +1,18 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://continuouscoordination.org/schema/person.schema.json",
-  "title": "Person",
-  "description": "A team member participating in one or more coordination loops.",
+  "$id": "https://continuouscoordination.org/schema/actor.schema.json",
+  "title": "Actor",
+  "description": "A participant in one or more coordination loops. An actor can be a person or an agent.",
   "type": "object",
   "properties": {
     "id": {
       "type": "string",
-      "description": "Unique identifier for this person."
+      "description": "Unique identifier for this actor."
+    },
+    "actor_type": {
+      "type": "string",
+      "enum": ["person", "agent"],
+      "description": "The type of actor: a human person or an automated agent."
     },
     "name": {
       "type": "string",
@@ -22,5 +27,5 @@
       "description": "IANA timezone identifier (e.g. America/New_York)."
     }
   },
-  "required": ["id", "name"]
+  "required": ["id", "actor_type", "name"]
 }

@@ -13,18 +13,18 @@ These schemas define the shape of the data that flows through those loops, so an
 
 | Schema | Description |
 |--------|-------------|
-| [person](schemas/person.schema.json) | A team member participating in coordination loops |
-| [team](schemas/team.schema.json) | A group of people who coordinate together |
+| [actor](schemas/actor.schema.json) | A participant in coordination loops (person or agent) |
+| [team](schemas/team.schema.json) | A group of actors who coordinate together |
 | [team-checkin](schemas/team-checkin.schema.json) | An individual's update to the ground-level loop (intentions, progress, blockers) |
 | [goal-story](schemas/goal-story.schema.json) | A big-picture container of work, like a project, campaign, sprint, or OKR |
-| [goal-story-update](schemas/goal-story-update.schema.json) | An update from a person on a goal story (status, progress, and next steps) |
-| [coordination-event](schemas/coordination-event.schema.json) | A record of a person providing input to a coordination loop |
+| [goal-story-update](schemas/goal-story-update.schema.json) | An update from an actor on a goal story (status, progress, and next steps) |
+| [coordination-event](schemas/coordination-event.schema.json) | A record of an actor providing input to a coordination loop |
 
 See [examples/](examples/) for valid sample data and [spec.md](spec.md) for the full specification.
 
 ### Visualization
 
-![Continuous Coordination Schema](schema_v0-3-0.svg)
+![Continuous Coordination Schema](schema_v1-0-0.svg)
 
 ## Usage
 

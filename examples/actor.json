@@ -1,5 +1,6 @@
 {
   "id": "p-1",
+  "actor_type": "person",
   "name": "Jamie Chen",
   "role": "Product Manager",
   "timezone": "America/Chicago"

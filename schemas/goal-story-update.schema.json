@@ -9,9 +9,9 @@
       "type": "string",
       "description": "Unique identifier for this update."
     },
-    "person_id": {
+    "actor_id": {
       "type": "string",
-      "description": "ID of the person who provided this update."
+      "description": "ID of the actor who provided this update."
     },
     "goal_story_id": {
       "type": "string",
@@ -47,5 +47,5 @@
       "description": "Timestamp when this update was published (ISO 8601)."
     }
   },
-  "required": ["id", "person_id", "goal_story_id", "date", "title", "content"]
+  "required": ["id", "actor_id", "goal_story_id", "date", "title", "content"]
 }

@@ -9,9 +9,9 @@
       "type": "string",
       "description": "Unique identifier for this team check-in."
     },
-    "person_id": {
+    "actor_id": {
       "type": "string",
-      "description": "ID of the person who provided this check-in."
+      "description": "ID of the actor who provided this check-in."
     },
     "team_id": {
       "type": "string",
@@ -27,14 +27,14 @@
       "items": {
         "type": "string"
       },
-      "description": "Intentions - what this person plans to work on. Communicating intent is a core practice: it lets leaders course-correct early and lets contributors drive progress autonomously."
+      "description": "Intentions - what this actor plans to work on. Communicating intent is a core practice: it lets leaders course-correct early and lets contributors drive progress autonomously."
     },
     "previously": {
       "type": "array",
       "items": {
         "type": "string"
       },
-      "description": "Progress - what this person accomplished since their last team check-in."
+      "description": "Progress - what this actor accomplished since their last team check-in."
     },
     "blockers": {
       "type": "array",
@@ -49,5 +49,5 @@
       "description": "Timestamp when this team check-in was submitted (ISO 8601)."
     }
   },
-  "required": ["id", "person_id", "team_id", "date"]
+  "required": ["id", "actor_id", "team_id", "date"]
 }
