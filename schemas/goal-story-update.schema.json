@@ -35,10 +35,6 @@
       "type": "string",
       "description": "Narrative update - the written context about where things stand and why. Writing it down clarifies thinking, makes updates digestible, and creates a searchable record."
     },
-    "next_steps": {
-      "type": "string",
-      "description": "What's coming next - planned actions, open questions, or decisions needed before the next update."
-    },
     "progress_percent": {
       "type": "integer",
       "minimum": 0,
