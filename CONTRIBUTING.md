@@ -1,4 +1,4 @@
-# Contributing to Continuous Coordination Schema
+# Contributing to the Continuous Coordination Schema
 
 Thanks for your interest in improving the Continuous Coordination schemas.
 
