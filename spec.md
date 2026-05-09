@@ -80,18 +80,19 @@ Key properties:
 
 ## Relationships
 
-```
-team --has--> team-checkin (one-to-many)
-actor --belongs to--> team (many-to-many, via member_ids)
-actor --provides--> team-checkin (one-to-many)
-
-team --is involved with--> goal-story (many-to-many, via team_ids)
-actor --is involved with--> goal-story (many-to-many, via actor_ids)
-goal-story --has parent--> goal-story (self-referential, optional)
-goal-story --has--> goal-story-update (one-to-many)
-actor --provides--> goal-story-update (one-to-many)
-
-coordination-event --references--> team-checkin | goal-story-update (one-to-one)
+```mermaid
+erDiagram
+    ACTOR }o--o{ TEAM : "belongs to"
+    ACTOR ||--o{ TEAM_CHECKIN : authors
+    TEAM  ||--o{ TEAM_CHECKIN : receives
+    ACTOR }o--o{ GOAL_STORY : "involved with"
+    TEAM  }o--o{ GOAL_STORY : "involved with"
+    GOAL_STORY ||--o{ GOAL_STORY : "has parent"
+    GOAL_STORY ||--o{ GOAL_STORY_UPDATE : has
+    ACTOR ||--o{ GOAL_STORY_UPDATE : authors
+    ACTOR ||--o{ COORDINATION_EVENT : "input from"
+    COORDINATION_EVENT }o--|| TEAM_CHECKIN       : "references when event_type=team_checkin"
+    COORDINATION_EVENT }o--|| GOAL_STORY_UPDATE  : "references when event_type=goal_story_update"
 ```
 
 ## Design principles
